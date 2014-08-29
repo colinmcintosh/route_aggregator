@@ -1,17 +1,23 @@
 Name: Route Aggregator
+
 Author: Colin McIntosh
+
 Current Version: 0.1
+
 Version Date: 08/28/2014
+
 License: MIT
 
 
-Description: 
+Description
+---------------
 	This tool takes an input file of static routes, combines routes into a
 	shorter prefix lenth, if possible, and creates an output file with the
 	resulting static routes.
 
 	
-Usage Guidelines:
+Usage Guidelines
+---------------
 	The tool will aggregate contiguous static routes have the same next-hop
 	and combine to form a supernet.
 	The tool will read any lines in the input file that follow the format of:
@@ -28,7 +34,8 @@ Usage Guidelines:
 	The tool will NOT preserve remarks.
 
 	
-Command Line Usage:
+Command Line Usage
+---------------
 	> python route_aggregator.py [input_file] [output_file]
 	 
 	input_file - (Optional) This is the path of the file that contains the
@@ -38,11 +45,13 @@ Command Line Usage:
 							 resulting static routes. [Default = out.txt]
 							 
 
-Changelog:
+Changelog
+---------------
 	v0.1 - Initial build. Contains only basic functionality.
 	
 	
-To-do:
+To-do
+---------------
 	-IPv6 support
 	-Preserve in-line remarks
 	-Support routes with destination interface
